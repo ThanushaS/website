@@ -37,11 +37,11 @@ const [settingsMenuActive, setSettingsMenuActive] = useState(false);
    }
   return (
    <div>
-      <ul className='othernav' style={{marginLeft:"-31px",marginBottom:'-20px', alignItems:''}}>
+      <ul className='othernav' style={{marginLeft:"-50px",marginRight:'10px',marginBottom:'0px', alignItems:''}}>
          {
          otherNavs.map(onav=>{
             return (
-            <li key={onav.label} className='item' onClick={()=>handleOtherNav(onav)}>
+            <li key={onav.label} className='setting-item mb-2'style={{marginTop:'5px', marginLeft:'-1px'}} onClick={()=>handleOtherNav(onav)}>
                <Link href={onav.url}>
                   <span className='item '>
                      <i className={onav.icon} />

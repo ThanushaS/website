@@ -29,9 +29,7 @@ const Navbar = () => {
          url:'/components/Header/Notification'
 
      },
-    
-    
-
+     
    ]
 
    
@@ -44,30 +42,36 @@ const [settingsMenuActive, setSettingsMenuActive] = useState(false);
 
 
   return (
-<div className= 'navbar navbar navbar-expand-lg   py-4 px-1 sticky-top' >
-   <div className=" item d-flex align-items-center">
+<div className= 'sticky-top' >
+  {/* <div className=" item d-flex align-items-center">
       <i className=" bi bi-list  primary-text fs-4 me-3"  ></i>
-   </div>
-   <div className="search-controller">
+   </div>*/}
+
+   <nav className='navbar navbar-expand-lg'>
+            <div className="search-controller">
             <button className="search-btn">
                 <i className="bi bi-search"></i>
             </button>
                   <input type="text" placeholder="Search..." />
-  </div>
-   <nav>
-    { /*   <button className="navbar-toggler" type="button" data-bs-toggle="collapse"data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"aria-expanded="false" aria-label="Toggle navigation">
-              <span className="navbar-toggler-icon"></span>
-          </button>*/}
+            <div className='text'></div>
+</div>
+      <div className='container'>
+
+      <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span className="navbar-toggler-icon"></span>
+    </button>
+    <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
  
-      <ul className='navbar-nav mb-lg-0' style={{marginLeft:'68px'}}>
  
+      <ul className='navbar-nav me-auto mb-2 mb-lg-0' >
+     
          {
          navMenus.map(navM=>{
             return(
-            <li className='item' key={navM.name}onClick={()=>handlenavMenus(navM)}>
+            <li className='nav-item' key={navM.name}onClick={()=>handlenavMenus(navM)}>
                <a href={navM.url}>
                <span className='item'><i className={navM.icon}/>
-               <span className="position-absolute top-0 start-100 translate-middle p-1 bg-danger   rounded-circle" />
+               <span className="  top-0  start-100 translate-middle p-1 bg-danger   rounded-circle" />
                </span>
                </a>
             </li>
@@ -100,6 +104,8 @@ const [settingsMenuActive, setSettingsMenuActive] = useState(false);
                   </div>
                   </div>
                            </ul>*/}
+                           </div>
+                           </div>
    </nav>     
 </div>
   )

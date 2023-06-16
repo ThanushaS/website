@@ -1,19 +1,24 @@
 import React,{useEffect,useState} from 'react';
 import MenuItem from './MenuItem';
-import Logo from '../Logo';
-
+import Logo from '../Logo'; 
+import{BsFillEmojiSunglassesFill,BsFillMegaphoneFill,BsFillBriefcaseFill} from 'react-icons/bs'
+import{MdDashboard} from 'react-icons/md'
+import{FaUsers,FaShoppingCart} from 'react-icons/fa'
+import{GiChampions} from 'react-icons/gi'
+import {HiUsers} from 'react-icons/hi'
+import {SiConan} from 'react-icons/si'
 
 export const menuItems=[
   {
    name:"",
     url:'/',
-    iconClassName:"bi bi-grid",
+    iconClassName:MdDashboard,
     subMenuBlank:"",
   },
  {
   name:"Teams",
   url:'/Teams',
-  iconClassName:"bi bi-collection",
+  iconClassName:FaUsers,
   subMenuBlank:"Teams",
 
   subMenus: [
@@ -23,13 +28,69 @@ export const menuItems=[
  {
   name: "SponsorPerks",
   url: `/sponsorPerks`,
-  iconClassName: "bi bi-bar-chart-line",
-  subMenuBlank:"sponsorPerks",
+  iconClassName:BsFillMegaphoneFill,
+
+   subMenuBlank:"sponsor Perks",
 
   subMenus: [
-    { name: "Brand Sponsor", url: "/components/Sidemenu/dashboard/sponsorPerks/BrandSponsor" },
+    { name: "Brand Sponsor", url: "/components/Sidemenu/dashboard/sponsorPerks/BrandSponsor" }, 
   ],
 },
+{
+   name:"Teams",
+   url:'/Teams',
+   iconClassName:HiUsers,
+
+   subMenuBlank:"Teams",
+ 
+   subMenus: [
+     { name: "Pro Teams", url: "/components/Sidemenu/dashboard/teams/ProTeams" },
+   ],
+  },
+  {
+   name:"Teams",
+   url:'/Teams',
+   iconClassName:GiChampions,
+
+   subMenuBlank:"Teams",
+ 
+   subMenus: [
+     { name: "Pro Teams", url: "/components/Sidemenu/dashboard/teams/ProTeams" },
+   ],
+  },
+  {
+   name:"Teams",
+   url:'/Teams',
+   iconClassName:FaShoppingCart,
+
+   subMenuBlank:"Teams",
+ 
+   subMenus: [
+     { name: "Pro Teams", url: "/components/Sidemenu/dashboard/teams/ProTeams" },
+   ],
+  },
+  {
+   name:"Teams",
+   url:'/Teams',
+   iconClassName:BsFillBriefcaseFill,
+
+   subMenuBlank:"Teams",
+ 
+   subMenus: [
+     { name: "Pro Teams", url: "/components/Sidemenu/dashboard/teams/ProTeams" },
+   ],
+  },
+  {
+   name:"Teams",
+   url:'/Teams',
+   iconClassName:SiConan,
+
+   subMenuBlank:"Teams",
+ 
+   subMenus: [
+     { name: "Pro Teams", url: "/components/Sidemenu/dashboard/teams/ProTeams" },
+   ],
+  },
 ];
 
 const Sidebar = ({children}) => {
@@ -71,14 +132,14 @@ const Sidebar = ({children}) => {
           <div className=''style={{alignItems:'center',marginLeft:'40px'}}><Logo/></div>
           </div>
          
-          <ul className="nav">
+          <ul className="nav " style={{marginTop:''}}>
             {menuItems.map((menuItem, index) => (
             <MenuItem
               key={index}
               name={menuItem.name}
               //exact={menuItem.exact}
               url={menuItem.url}
-             //linkName={menuItem.linkName}
+               //linkName={menuItem.linkName}
               subMenuBlank={menuItem.subMenuBlank}
               subMenus={menuItem.subMenus || []}
               iconClassName={menuItem.iconClassName}

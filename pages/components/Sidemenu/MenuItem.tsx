@@ -13,7 +13,7 @@ export type menuItems={
 };
 
 const MenuItem = (props) => {
-    const {name, subMenus, iconClassName, iconClosedClassName, onClick, to,href, exact, linkName, menuItem, subMenuBlank,url}= props;
+    const {name, subMenus, iconClassName:Icon, iconClosedClassName, onClick, to,href, exact, linkName, menuItem, subMenuBlank,url}= props;
 
     const[expand, setExpand,]= useState(false);
 
@@ -21,19 +21,18 @@ const MenuItem = (props) => {
         <li  onClick={props.onClick}>
             <a href={"/"}  onClick={()=>{
                setExpand((e) => !e); 
-            }} className={`menu-item`}>
+            }} className={`menu-item`}>{menuItem}
                 <div className='icon'>
-                    <i className={iconClassName}></i>
-                <span className={'link-name'}>{name}</span>
-                <i className={iconClosedClassName}></i>
-                <ul className='sub-menu blank'>{name}</ul>
+                <i className=''> <Icon/></i>  
+                <span className={'link-name'}>{linkName}</span>
+                <ul className='sub-menu blank'>{subMenuBlank}</ul>
                 </div>
             </a>
             {subMenus && subMenus.length > 0 ? (
                 <ul className={'sub-menu'}>
                     {subMenus.map((menu, index) => (
                         <li key = {index}>
-                           <div className={menu.subMenuBlank}></div>
+                           <div className={menu.subMenuBlank}>{subMenuBlank}</div>
                             <Link href={menu.url} >{menu.name}</Link>
                         </li>
                     ))}

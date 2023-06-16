@@ -6,14 +6,14 @@ const ProTeams = () => {
    <div className='row 'style={{marginTop:'26px'}}>
         <div className='col-sm-  team' >Teams</div>
         <Search/>
-        {/*<div className='col-sm-2'>
+      {/*<div className='col-sm-2'>
         <div className="search-controller">
           <button className="search-btn">
               <i className="bi bi-search" style={{width:'390px',marginLeft:'894px'}}></i>
           </button>
                 <input type="text" placeholder="Search..." style={{width:'390px',marginLeft:'844px'}}/>
       </div>
-</div>*/}
+      </div>*/}
    </div>
    <div className='row'>
         <div className='col-sm'>

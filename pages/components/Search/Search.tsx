@@ -2,13 +2,11 @@ import React from 'react'
 
 const Search = () => {
   return (
-<div>
-   <div className="search-controller">
-      <button className="search-btn">
-         <i className="bi bi-search"></i>
-         </button>
-         <input type="text" placeholder="Search..." />
-   </div>
+   <div className=" controller border">
+   <button className="sbtn1  border-none">
+   <i className="bi bi-search sbi" ></i>
+   </button>
+   <input type="text1" className='search1' placeholder="Search..."/>
 </div>
   )
 }

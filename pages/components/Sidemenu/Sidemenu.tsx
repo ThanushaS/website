@@ -1,24 +1,28 @@
 import React,{useEffect,useState} from 'react';
 import MenuItem from './MenuItem';
 import Logo from '../Logo'; 
-import{BsFillEmojiSunglassesFill,BsFillMegaphoneFill,BsFillBriefcaseFill} from 'react-icons/bs'
-import{MdDashboard} from 'react-icons/md'
-import{FaUsers,FaShoppingCart} from 'react-icons/fa'
-import{GiChampions} from 'react-icons/gi'
-import {HiUsers} from 'react-icons/hi'
-import {SiConan} from 'react-icons/si'
 
+
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faBriefcase, faBullhorn, faCartShopping, faHome, faSitemap, faUsers, fas,faHexagonVerticalNftSlanted,faAlternateFirstOrder, faGear } from '@fortawesome/free-solid-svg-icons';
+import { far } from '@fortawesome/free-regular-svg-icons';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+library.add(fab);
+library.add(fas);
+library.add(far);
 export const menuItems=[
   {
    name:"",
     url:'/',
-    iconClassName:MdDashboard,
+    icon:faHome,
     subMenuBlank:"",
   },
  {
   name:"Teams",
   url:'/Teams',
-  iconClassName:FaUsers,
+  icon:faUsers,
   subMenuBlank:"Teams",
 
   subMenus: [
@@ -28,7 +32,7 @@ export const menuItems=[
  {
   name: "SponsorPerks",
   url: `/sponsorPerks`,
-  iconClassName:BsFillMegaphoneFill,
+  icon:faBullhorn,
 
    subMenuBlank:"sponsor Perks",
 
@@ -39,7 +43,37 @@ export const menuItems=[
 {
    name:"Teams",
    url:'/Teams',
-   iconClassName:HiUsers,
+   icon:faGear,
+   subMenuBlank:"Teams",
+ 
+   subMenus: [
+     { name: "Pro Teams", url: "/components/Sidemenu/dashboard/teams/ProTeams" },
+   ],
+  },
+  {
+   name:"Teams",
+   url:'/Teams',
+   icon:faSitemap,
+   subMenuBlank:"Teams",
+ 
+   subMenus: [
+     { name: "Pro Teams", url: "/components/Sidemenu/dashboard/teams/ProTeams" },
+   ],
+  },
+  {
+   name:"Teams",
+   url:'/Teams',
+   icon:faCartShopping,
+   subMenuBlank:"Teams",
+ 
+   subMenus: [
+     { name: "Pro Teams", url: "/components/Sidemenu/dashboard/teams/ProTeams" },
+   ],
+  },
+  {
+   name:"Teams",
+   url:'/Teams',
+   icon:faBriefcase,
 
    subMenuBlank:"Teams",
  
@@ -50,41 +84,7 @@ export const menuItems=[
   {
    name:"Teams",
    url:'/Teams',
-   iconClassName:GiChampions,
-
-   subMenuBlank:"Teams",
- 
-   subMenus: [
-     { name: "Pro Teams", url: "/components/Sidemenu/dashboard/teams/ProTeams" },
-   ],
-  },
-  {
-   name:"Teams",
-   url:'/Teams',
-   iconClassName:FaShoppingCart,
-
-   subMenuBlank:"Teams",
- 
-   subMenus: [
-     { name: "Pro Teams", url: "/components/Sidemenu/dashboard/teams/ProTeams" },
-   ],
-  },
-  {
-   name:"Teams",
-   url:'/Teams',
-   iconClassName:BsFillBriefcaseFill,
-
-   subMenuBlank:"Teams",
- 
-   subMenus: [
-     { name: "Pro Teams", url: "/components/Sidemenu/dashboard/teams/ProTeams" },
-   ],
-  },
-  {
-   name:"Teams",
-   url:'/Teams',
-   iconClassName:SiConan,
-
+   icon:faHexagonVerticalNftSlanted, 
    subMenuBlank:"Teams",
  
    subMenus: [
@@ -142,7 +142,7 @@ const Sidebar = ({children}) => {
                //linkName={menuItem.linkName}
               subMenuBlank={menuItem.subMenuBlank}
               subMenus={menuItem.subMenus || []}
-              iconClassName={menuItem.iconClassName}
+              icon={menuItem.icon}
               onClick={(e) => {
                 if (inactive) {
                   setInactive(false);

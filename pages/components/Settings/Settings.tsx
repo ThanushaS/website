@@ -1,19 +1,17 @@
 import React,{useState} from 'react'
 import Link from 'next/link';
+import Login from '../../login/Login';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faRightToBracket } from '@fortawesome/free-solid-svg-icons';
 const Settings = () => {
    const otherNavs = [
       {
          name:'settings',
          label:'Settings',
          icon: "bi bi-gear-fill",
-         url:'/components/Settings/View',
+         url:'/components/Settings/Settings',
          subMenu:[
-           { 
-            name:'View',
-            label:'View',
-            icon: 'bi-envelope-fill',
-            url:'/Settings/View'
-         },
+      
          { 
             name:'View',
             label:'View',
@@ -29,6 +27,7 @@ const Settings = () => {
          ]
      },
    ]
+   
 const [settingsMenuActive, setSettingsMenuActive] = useState(false);
    const handleOtherNav = (nav:{name: string}) => {
       if(nav.name === 'settings'){
@@ -44,7 +43,7 @@ const [settingsMenuActive, setSettingsMenuActive] = useState(false);
             <li key={onav.label} className='setting-item mb-2'style={{marginTop:'5px', marginLeft:'-1px'}} onClick={()=>handleOtherNav(onav)}>
                <Link href={onav.url}>
                   <span className='item '>
-                     <i className={onav.icon} />
+                     <i className={onav.icon}style={{color:'rgba(97, 103, 114, 1)',marginLeft:'-25px',marginTop:'5px'}} />
                   </span>
                </Link>
             </li>

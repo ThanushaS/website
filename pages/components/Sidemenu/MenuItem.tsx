@@ -1,6 +1,8 @@
 import React, {useRef, useState} from 'react';
 import Link from 'next/link';
 import { menuItems } from './Sidemenu';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { icon } from '@fortawesome/fontawesome-svg-core';
 
 
 export type menuItems={
@@ -13,7 +15,7 @@ export type menuItems={
 };
 
 const MenuItem = (props) => {
-    const {name, subMenus, iconClassName:Icon, iconClosedClassName, onClick, to,href, exact, linkName, menuItem, subMenuBlank,url}= props;
+    const {name, subMenus, iconClassName,icon, iconClosedClassName, onClick, to,href, exact, linkName, menuItem, subMenuBlank,url}= props;
 
     const[expand, setExpand,]= useState(false);
 
@@ -23,7 +25,7 @@ const MenuItem = (props) => {
                setExpand((e) => !e); 
             }} className={`menu-item`}>{menuItem}
                 <div className='icon'>
-                <i className=''> <Icon/></i>  
+                <i className=''> <FontAwesomeIcon icon={icon}/></i>  
                 <span className={'link-name'}>{linkName}</span>
                 <ul className='sub-menu blank'>{subMenuBlank}</ul>
                 </div>

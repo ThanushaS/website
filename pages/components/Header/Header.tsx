@@ -7,6 +7,9 @@ import LogoutIcon from '../../assets/icons/icon-logout.svg';
 import Search from '../Search/Search';
 import Profile from '../Profile/Profile';
 import Settings from '../Settings/Settings';
+import Login from '../Settings/Login';
+import { faRightToBracket } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export interface Header{
    Url?:string,
@@ -29,14 +32,29 @@ const Navbar = () => {
          url:'/components/Header/Notification'
 
      },
-     
+    
    ]
-
+const navlogin=[
+  { 
+    name:'Login',
+    label:'Login',
+    icon: faRightToBracket,
+    url:'/components/Sign/Login/Login'
+ },
+   
+]
    
 const [settingsMenuActive, setSettingsMenuActive] = useState(false);
    const handlenavMenus = (nav:{name: string}) => {
       if(nav.name === 'settings'){
           setSettingsMenuActive(true)
+      }
+  }
+
+  const [loginsMenuActive, setLoginMenuActive] = useState(false);
+   const handlenavlogin = (nav:{name: string}) => {
+      if(nav.name === 'login'){
+          setLoginMenuActive(true)
       }
   }
 
@@ -55,30 +73,44 @@ const [settingsMenuActive, setSettingsMenuActive] = useState(false);
                   <input type="text" placeholder="Search..." />
             <div className='text'></div>
 </div>
-      <div className='container'>
-
+      <div className='sm'>
       <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
     <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
- 
- 
       <ul className='navbar-nav me-auto mb-2 mb-lg-0' >
      
          {
          navMenus.map(navM=>{
             return(
-            <li className='nav-item' key={navM.name}onClick={()=>handlenavMenus(navM)}>
-               <a href={navM.url}>
-               <span className='item'><i className={navM.icon}/>
-               <span className="  top-0  start-100 translate-middle p-1 bg-danger   rounded-circle" />
-               </span>
-               </a>
-            </li>
+            <li className='nav-item' key={navM.name} onClick={() => handlenavMenus(navM)}>
+                <a href={navM.url}>
+                  <span className='item'><i className={navM.icon}style={{color:'rgba(97, 103, 114, 1)',marginLeft:'-25px'}} />
+                    <span className="  top-0  start-100 translate-middle p-1 bg-danger   rounded-circle" />
+                  </span>
+                </a>
+              </li>
+           
                   )
                })
          }
+
+          
          <Settings/>
+         {
+                navlogin.map(navl=>{
+                  return(
+                    <li className='nav-item' key={navl.name} onClick={()=> handlenavlogin(navl)}>
+                      <a href={navl.url}>
+                        <span className='item'>
+                          <i className={navl.icon}style={{color:'rgba(97, 103, 114, 1)',marginLeft:'-25px'}} >
+                        <FontAwesomeIcon icon={navl.icon}style={{color:'rgba(97, 103, 114, 1)',marginLeft:'-20px'}}/></i> 
+                        </span>
+                      </a>
+                    </li>
+                  )
+                })
+               }
          <Profile/>
       </ul>
    
@@ -105,7 +137,7 @@ const [settingsMenuActive, setSettingsMenuActive] = useState(false);
                   </div>
                            </ul>*/}
                            </div>
-                           </div>
+      </div>
    </nav>     
 </div>
   )

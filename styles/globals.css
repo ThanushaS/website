@@ -1204,11 +1204,11 @@ background: rgba(255, 255, 255, 0.07) !important;
 margin-top: 17px !important;
 }
 .con3{
-  width: 1234px;
-height: 409px;
-flex-shrink: 0;
-border-radius: 4px;
-background: #151725;
+  width: 1234px !important;
+height: 409px !important;
+flex-shrink: 0 !important;
+border-radius: 4px !important;
+background: #151725 !important;
 }
 .map{
   width: 842px;
@@ -1227,11 +1227,63 @@ margin-top: 29px;
 margin-left: 30px;
 }
 .form-control2{
-  width: 376px;
-height: 37px;
+  width: 376px !important;
+height: 37px !important;
 flex-shrink: 0;
 border-radius: 4px;
 background: rgba(217, 217, 217, 0.06);
 margin-left: 29px !important;
-line-height: 41px I !important;
+margin-right: 41px !important;
+margin-top: 1px !important;
+margin-bottom: -1px !important;
+}
+/*****ParticipatingTournaments*****/
+.ParticipatingTournaments{
+  color: #FFF;
+font-size: 24px;
+font-family: Roboto;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+color: (255, 255, 255, 1)
+}
+.Activetournament{
+  color: rgba(255, 255, 255, 0.62);
+font-size: 12px;
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+text-transform: uppercase;
+}
+.PastTournament{
+  color: rgba(255, 255, 255, 0.62);
+font-size: 12px;
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+text-transform: uppercase;
+}
+.btn6{
+  border-radius: 5px;
+background-color: rgba(255, 255, 255, 0.05);
+}
+.dropdown{
+  color: rgba(255, 255, 255, 0.26);
+font-size: 10px;
+font-family: Roboto;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.GamingArena{
+color: #FFF;
+font-size: 14px;
+font-family: Roboto;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+text-transform: capitalize;
+color: rgba(255, 255, 255, 1);
 }

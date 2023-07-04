@@ -13,11 +13,11 @@ import View from '../../../Viewbtn'
 const OverView = () => {
    
   return (
-   <div className='container-fluid'style={{color:' #FFFFFF',marginLeft:'114px'}}>
+   <div className='container-fluid'style={{color:' #FFFFFF',marginLeft:'114px',height:'1080px',width:'1440px'}}>
       <h1 className='overview'>OverView</h1>
          <div className='row row-cols-3 ' style={{marginTop:'30px'}}>
-            <div className='col-8 col-md-4 col-sm-12 border' >
-               <div className="col-12 col-md-12 col-sm-12  card" style={{width:'429px',height:'112px',marginLeft:'-9px',marginTop:'px', borderRadius:'4px',background:'rgba(0, 0, 0, 0.41)'}}>
+            <div className='col-8 col-md col-sm border' >
+               <div className="col-12 col-md col-sm  card" style={{width:'429px',height:'112px',marginLeft:'-9px',marginTop:'px', borderRadius:'4px',background:'rgba(0, 0, 0, 0.41)'}}>
                   <div className="col-6 col-md col-sm card-body" style={{color:' #FFFFFF'}}>
                   <FontAwesomeIcon className='overicon'icon={faHandHoldingDollar} style={{width:'38px',height:'38px',marginLeft:'6px',marginTop:'-7px'}}/> 
                   <span className='' style={{width:'49px',height:'28px',fontWeight:'800',fontStyle:'normal',fontSize:'24px',lineHeight:'28px',marginLeft:'19px',top:'15px',marginTop:'10px'}}>$0.0</span>
@@ -66,6 +66,7 @@ const OverView = () => {
                    <div className='row border'>
                    <div className='col-8 col-md-6 col-sm-8 border'>
                      <div className="card mb-3" style={{width:'250px',height:'112px',background:'rgba(0, 0, 0, 0.41)'}} >
+                      <Link href='/components/Submenu/ParticipatingTournaments/ParticipatingTournaments' style={{}}>
                      <div className="row g-0">
                      <div className="col-6 col-md-6 p-2">
                         <img src="/R.jpg" className="img-fluid " alt="..." style={{width:'92px',height:'93px',background:'rgba(0, 0, 0, 0.41)'}}/>
@@ -80,6 +81,7 @@ const OverView = () => {
                         </div>
                      </div>
                   </div>
+                  </Link>
                   </div>
                      </div>
                   
@@ -174,7 +176,7 @@ const OverView = () => {
       <p className='card-text-brand spo-text'> We will place your logo/ profile image and add backlink to your profile/ website /server on EsportsPro Sponsor section.</p>
    </div>
    <div className='row '>
-     {} <div className="progress" style={{height:'5px',width:'158px',marginLeft:'2px'}}>
+      <div className="progress" style={{height:'5px',width:'158px',marginLeft:'2px'}}>
          <div className="progress-bar" role="progressbar" aria-valuenow='75' aria-valuemin='0' aria-valuemax='100'></div>
       </div>
    </div>
@@ -231,17 +233,17 @@ const OverView = () => {
                <div className='col-8 col-md-6 col-sm-12 border'>
                <h1 className='UnlockBadges'>Unlock Badges (Coming Soon)</h1>
                <div className='row'>
-                  <div className='col col-md border mb-3'>
+                  <div className='col-8 col-md border mb-3'>
                      <div className='card-imge'>
                         <img src="R.jpg" className="img-fluid rounded-top" alt="" style={{width:'144px',height:'146px',borderRadius:'4px',marginLeft:'18px'}}/>
                      </div>
                   </div>
-                  <div className='col col-md  border mb-3'>
+                  <div className='col-8 col-md   border mb-3'>
                   <div className='card-imge' >
                         <img src="R.jpg" className="img-fluid rounded-top" alt="" style={{width:'144px',height:'146px',borderRadius:'4px',marginLeft:'18px'}}/>
                      </div>
                   </div>
-                  <div className='col col-md border mb-3'>
+                  <div className='col-8 col-md  border mb-3'>
                   <div className='card-imge'>
                         <img src="R.jpg" className="img-fluid rounded-top" alt="" style={{width:'144px',height:'146px',borderRadius:'4px',marginLeft:'18px'}}/>
                      </div>
@@ -258,7 +260,7 @@ const OverView = () => {
                </div>
              </div>
                <div className='row'>
-                  <div className='col-5 col-md col-sm p-2 border pr-0 '>
+                  <div className='col-8 col-md col-sm-8 p-2 border pr-0 '>
                   <Link href='/components/Submenu/SuggestedBusinesses/SuggestedBusinesses'>
                      <div className=" Suggestedcard" >
                      <img src="R1.jpg" className=" img " alt="..." width={120} height={93}/>
@@ -268,7 +270,7 @@ const OverView = () => {
                   </div>
                   </Link>
                   </div>
-                  <div className='col-5 col-md col-sm p-2 border pr-0'>
+                  <div className='col-8 col-md col-sm-8 p-2 border pr-0'>
                   <div className=" Suggestedcard" >
                      <img src="R1.jpg" className=" img " alt="..."width={120} height={93}/>
                      <div className="card-img-overlay">
@@ -277,7 +279,7 @@ const OverView = () => {
                      </div>
                   </div>
                   </div>
-                  <div className='col-5 col-md col-sm  p-2 border pr-0'>
+                  <div className='col-8 col-md col-sm-6  p-2 border pr-0'>
                   <div className="Suggestedcard" >
                      <img src="R1.jpg" className="img " alt="..." width={120} height={93}/>
                      <div className="card-img-overlay">
@@ -286,7 +288,7 @@ const OverView = () => {
                      </div>
                   </div>
                   </div>
-                  <div className='col-5 col-md col-sm  p-2 border pr-0'>
+                  <div className='col-8 col-md col-sm-6  p-2 border pr-0'>
                   <div className="Suggestedcard" >
                      <img src="R1.jpg" className="img " alt="..."width={120} height={93}/>
                      <div className="card-img-overlay">
@@ -295,7 +297,7 @@ const OverView = () => {
                      </div>
                   </div>
                   </div>
-                  <div className='col-5 col-md col-sm  p-2 border pr-0'>
+                  <div className='col-8 col-md col-sm-6  p-2 border pr-0'>
                   <div className="Suggestedcard" >
                      <img src="R1.jpg" className="img " alt="..."width={120} height={93}/>
                      <div className="card-img-overlay">
@@ -304,7 +306,7 @@ const OverView = () => {
                      </div>
                   </div>
                   </div>
-                  <div className='col-5 col-md col-sm p-2 border pr-0'>
+                  <div className='col-8 col-md col-sm-6 p-2 border pr-0'>
                   <div className="Suggestedcard" >
                      <img src="R1.jpg" className=" img " alt="..."width={120} height={93}/>
                      <div className="card-img-overlay">
@@ -313,7 +315,7 @@ const OverView = () => {
                      </div>
                   </div>
                   </div>
-                  <div className='col-5 col-md col-sm  p-2 border pr-0'>
+                  <div className='col-8 col-md col-sm  p-2 border pr-0'>
                   <div className="Suggestedcard" >
                      <img src="R1.jpg" className="img " alt="..."width={120} height={93}/>
                      <div className="card-img-overlay">
@@ -321,7 +323,7 @@ const OverView = () => {
                      </div>
                   </div>
                   </div>
-                  <div className='col-5 col-md col-sm p-2 border pr-0'>
+                  <div className='col-8 col-md col-sm p-2 border pr-0'>
                   <div className="Suggestedcard">
                      <img src="R1.jpg" className="img " alt="..."width={120} height={93}/>
                      <div className="card-img-overlay">

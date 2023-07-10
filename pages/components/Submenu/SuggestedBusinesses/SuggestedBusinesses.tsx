@@ -4,10 +4,10 @@ const SuggestedBusinesses = () => {
   return (
     <div className='container-fulid mt-5' style={{marginLeft:'114px'}}>
       <div className='row border' >
-         <div className='col-4 col-md col-sm border'>
+         <div className='col-8 col-md col-sm border'>
          <div className="card bg-dark text-white">
            
-            <img src="/R.jpg" className="img " alt="..." style={{width:'',height:'316px'}}/> <img src="/R.jpg" className="img " alt="..." style={{width:'',height:'316px'}}/>
+            <img src="/R.jpg" className="img " alt="..." style={{width:'',height:'316px'}}/> 
             <div className="card-img-overlay ">
                <h1 className="card-title Infinity">Infinity Gaming Cafe</h1>
             </div>
@@ -15,7 +15,7 @@ const SuggestedBusinesses = () => {
       </div>
       </div>
       <div className='row border'>
-         <div className='col-4 col-md-12 col-sm-12 border'style={{background:'rgba(21, 23, 37, 0.55)',width:'',height:''}}>
+         <div className='col-8 col-md-12 col-sm-12 border'style={{background:'rgba(21, 23, 37, 0.55)',width:'',height:''}}>
             <h1 className='InfinityGamingCafe'style={{}}>Infinity Gaming Cafe</h1>
            
             <div className='row '>
@@ -26,7 +26,7 @@ const SuggestedBusinesses = () => {
             <button type="button" className="Gaming" style={{}}>Gaming</button>
          </div>
          <div className='row  border con3' style={{padding:'',marginTop:'',}}>
-         <div className='col-lg-5 border'>
+         <div className='col-4 col-lg border'>
          <form>
       <div className="row">
         <div className="col-4 col-md border">

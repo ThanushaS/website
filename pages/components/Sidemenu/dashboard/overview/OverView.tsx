@@ -56,7 +56,7 @@ const OverView = () => {
             </div>
          </div>
          <div className='row'>
-            <div className='col border'>
+            <div className='col-6 col-md border'>
                <div className='row'>
                   <div className='col-8 col-md-6 col-sm-12 border'>
          <h1 className='feed' style={{width:'319px',height:'26px',left:'114px',top:'270px',fontFamily:'Roboto',fontStyle:'normal',fontWeight:'800px',fontSize:'22px',lineHeight:'26px',color:'#fffffff'}}>Feed / Notifications / Invitations</h1>
@@ -66,7 +66,7 @@ const OverView = () => {
                    <div className='row border'>
                    <div className='col-8 col-md-6 col-sm-8 border'>
                      <div className="card mb-3" style={{width:'250px',height:'112px',background:'rgba(0, 0, 0, 0.41)'}} >
-                      <Link href='/components/Submenu/ParticipatingTournaments/ParticipatingTournaments' style={{}}>
+                      <Link href='/components/Submenu/ParticipatingTournaments/ActiveTournaments' style={{}}>
                      <div className="row g-0">
                      <div className="col-6 col-md-6 p-2">
                         <img src="/R.jpg" className="img-fluid " alt="..." style={{width:'92px',height:'93px',background:'rgba(0, 0, 0, 0.41)'}}/>
@@ -123,7 +123,7 @@ const OverView = () => {
             <div className="card-body" style={{marginTop:'-49px'}}>
                <div className='row'>
                   <div className='col '>
-                     <h5 className="Displaybanner card-title"style={{color:'white'}}>Display banner opportunities</h5>
+                     <h5 className="Displaybanner"style={{color:'white'}}>Display banner opportunities</h5>
                   </div>
          <div className='col '>
             <div className="spodollar mt-"style={{marginLeft:'15px',}}>
@@ -160,7 +160,7 @@ const OverView = () => {
             <div className="card-body" style={{marginTop:'-49px'}}>
                <div className='row'>
                   <div className='col '>
-                     <h5 className="Displaybanner card-title"style={{color:'white'}}>Display banner opportunities</h5>
+                     <h5 className="Displaybanner"style={{color:'white'}}>Display banner opportunities</h5>
                   </div>
          <div className='col '>
             <div className="spodollar mt-"style={{marginLeft:'15px',}}>
@@ -197,7 +197,7 @@ const OverView = () => {
             <div className="card-body" style={{marginTop:'-49px'}}>
                <div className='row'>
                   <div className='col '>
-                     <h5 className="Displaybanner card-title"style={{color:'white'}}>Display banner opportunities</h5>
+                     <h5 className="Displaybanner"style={{color:'white'}}>Display banner opportunities</h5>
                   </div>
          <div className='col '>
             <div className="spodollar mt-"style={{marginLeft:'15px',}}>
@@ -233,17 +233,17 @@ const OverView = () => {
                <div className='col-8 col-md-6 col-sm-12 border'>
                <h1 className='UnlockBadges'>Unlock Badges (Coming Soon)</h1>
                <div className='row'>
-                  <div className='col-8 col-md border mb-3'>
+                  <div className='col-6 col-md border mb-3'>
                      <div className='card-imge'>
                         <img src="R.jpg" className="img-fluid rounded-top" alt="" style={{width:'144px',height:'146px',borderRadius:'4px',marginLeft:'18px'}}/>
                      </div>
                   </div>
-                  <div className='col-8 col-md   border mb-3'>
+                  <div className='col-6 col-md   border mb-3'>
                   <div className='card-imge' >
                         <img src="R.jpg" className="img-fluid rounded-top" alt="" style={{width:'144px',height:'146px',borderRadius:'4px',marginLeft:'18px'}}/>
                      </div>
                   </div>
-                  <div className='col-8 col-md  border mb-3'>
+                  <div className='col-6 col-md  border mb-3'>
                   <div className='card-imge'>
                         <img src="R.jpg" className="img-fluid rounded-top" alt="" style={{width:'144px',height:'146px',borderRadius:'4px',marginLeft:'18px'}}/>
                      </div>
@@ -265,7 +265,7 @@ const OverView = () => {
                      <div className=" Suggestedcard" >
                      <img src="R1.jpg" className=" img " alt="..." width={120} height={93}/>
                      <div className="card-img-overlay">
-                        <h5 className="card-title" style={{width:'120px',fontFamily:'Roboto',fontStyle:'normal',fontWeight:'600px',fontSize:'10px',lineHeight:'12px',textDecoration:'capitalize',color:'#ffffff',height:'93px',marginTop:'63px',marginLeft:'30px'}}>Public Library</h5>
+                        <h5 className="card-title1" style={{width:'120px',fontFamily:'Roboto',fontStyle:'normal',fontWeight:'600px',fontSize:'10px',lineHeight:'12px',textDecoration:'capitalize',color:'#ffffff',height:'93px',marginTop:'63px',marginLeft:'30px'}}>Public Library</h5>
                      </div>
                   </div>
                   </Link>
@@ -274,7 +274,7 @@ const OverView = () => {
                   <div className=" Suggestedcard" >
                      <img src="R1.jpg" className=" img " alt="..."width={120} height={93}/>
                      <div className="card-img-overlay">
-                        <h5 className="card-title" style={{width:'62px',height
+                        <h5 className="card-title1" style={{width:'62px',height
                      :'12px',fontFamily:'Roboto',fontStyle:'normal',fontWeight:'600px',fontSize:'10px',lineHeight:'12px',textDecoration:'capitalize',color:'#ffffff',marginTop:'63px',marginLeft:'30px'}}>Public Library</h5>
                      </div>
                   </div>
@@ -283,7 +283,7 @@ const OverView = () => {
                   <div className="Suggestedcard" >
                      <img src="R1.jpg" className="img " alt="..." width={120} height={93}/>
                      <div className="card-img-overlay">
-                        <h5 className="card-title" style={{width:'62px',height
+                        <h5 className="card-title1" style={{width:'62px',height
                      :'12px',fontFamily:'Roboto',fontStyle:'normal',fontWeight:'600px',fontSize:'10px',lineHeight:'12px',textDecoration:'capitalize',color:'#ffffff',marginTop:'63px',marginLeft:'30px'}}>Public Library</h5>
                      </div>
                   </div>
@@ -292,7 +292,7 @@ const OverView = () => {
                   <div className="Suggestedcard" >
                      <img src="R1.jpg" className="img " alt="..."width={120} height={93}/>
                      <div className="card-img-overlay">
-                        <h5 className="card-title" style={{width:'62px',height
+                        <h5 className="card-title1" style={{width:'62px',height
                      :'12px',fontFamily:'Roboto',fontStyle:'normal',fontWeight:'600px',fontSize:'10px',lineHeight:'12px',textDecoration:'capitalize',color:'#ffffff',marginTop:'63px',marginLeft:'30px'}}>Public Library</h5>
                      </div>
                   </div>
@@ -301,7 +301,7 @@ const OverView = () => {
                   <div className="Suggestedcard" >
                      <img src="R1.jpg" className="img " alt="..."width={120} height={93}/>
                      <div className="card-img-overlay">
-                        <h5 className="card-title" style={{width:'62px',height
+                        <h5 className="card-title1" style={{width:'62px',height
                      :'12px',fontFamily:'Roboto',fontStyle:'normal',fontWeight:'600px',fontSize:'10px',lineHeight:'12px',textDecoration:'capitalize',color:'#ffffff',marginTop:'63px',marginLeft:'30px'}}>Public Library</h5>
                      </div>
                   </div>
@@ -310,7 +310,7 @@ const OverView = () => {
                   <div className="Suggestedcard" >
                      <img src="R1.jpg" className=" img " alt="..."width={120} height={93}/>
                      <div className="card-img-overlay">
-                        <h5 className="card-title" style={{width:'62px',height
+                        <h5 className="card-title1" style={{width:'62px',height
                      :'12px',fontFamily:'Roboto',fontStyle:'normal',fontWeight:'600px',fontSize:'10px',lineHeight:'12px',textDecoration:'capitalize',color:'#ffffff',marginTop:'63px',marginLeft:'30px'}}>Public Library</h5>
                      </div>
                   </div>
@@ -319,7 +319,7 @@ const OverView = () => {
                   <div className="Suggestedcard" >
                      <img src="R1.jpg" className="img " alt="..."width={120} height={93}/>
                      <div className="card-img-overlay">
-                        <h5 className="card-title" style={{width:'62px',fontFamily:'Roboto',fontStyle:'normal',fontWeight:'600px',fontSize:'10px',lineHeight:'12px',textDecoration:'capitalize',color:'#ffffff',marginTop:'63px',marginLeft:'30px'}}>Public Library</h5>
+                        <h5 className="card-title1" style={{width:'62px',fontFamily:'Roboto',fontStyle:'normal',fontWeight:'600px',fontSize:'10px',lineHeight:'12px',textDecoration:'capitalize',color:'#ffffff',marginTop:'63px',marginLeft:'30px'}}>Public Library</h5>
                      </div>
                   </div>
                   </div>
@@ -327,7 +327,7 @@ const OverView = () => {
                   <div className="Suggestedcard">
                      <img src="R1.jpg" className="img " alt="..."width={120} height={93}/>
                      <div className="card-img-overlay">
-                        <h5 className="card-title" style={{width:'62px',height
+                        <h5 className="card-title1" style={{width:'62px',height
                      :'12px',fontFamily:'Roboto',fontStyle:'normal',fontWeight:'600px',fontSize:'10px',lineHeight:'12px',textDecoration:'capitalize',color:'#ffffff',marginTop:'63px',marginLeft:'30px'}}>Public Library</h5>
                      </div>
                   </div>
@@ -356,7 +356,7 @@ const OverView = () => {
                   <div className="card" style={{width:'100px',height:'93px',background: 'linear-gradient(360deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%)',borderRadius: '4px'}}>
                      <img src="R1.jpg" className=" img " alt="..."width={120} height={93}/>
                      <div className="card-img-overlay">
-                        <h5 className="card-title" style={{width:'62px',fontFamily:'Roboto',fontStyle:'normal',fontWeight:'600px',fontSize:'10px',lineHeight:'12px',textDecoration:'capitalize',color:'#ffffff'}}>Public Library</h5>
+                        <h5 className="card-title2" style={{width:'62px',fontFamily:'Roboto',fontStyle:'normal',fontWeight:'600px',fontSize:'10px',lineHeight:'12px',textDecoration:'capitalize',color:'#ffffff'}}>Public Library</h5>
                      </div>
                   </div>
                   </div>
@@ -364,7 +364,7 @@ const OverView = () => {
                   <div className="card" style={{width:'100px',height:'93px',background: 'linear-gradient(360deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%)',borderRadius: '4px'}}>
                      <img src="R1.jpg" className=" img " alt="..."width={120} height={93}/>
                      <div className="card-img-overlay">
-                        <h5 className="card-title" style={{width:'62px',fontFamily:'Roboto',fontStyle:'normal',fontWeight:'600px',fontSize:'10px',lineHeight:'12px',textDecoration:'capitalize',color:'#ffffff'}}>Public Library</h5>
+                        <h5 className="card-title2" style={{width:'62px',fontFamily:'Roboto',fontStyle:'normal',fontWeight:'600px',fontSize:'10px',lineHeight:'12px',textDecoration:'capitalize',color:'#ffffff'}}>Public Library</h5>
                      </div>
                   </div>
                   </div>
@@ -372,7 +372,7 @@ const OverView = () => {
                   <div className="card" style={{width:'100px',height:'93px',background: 'linear-gradient(360deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%)',borderRadius: '4px'}}>
                      <img src="R1.jpg" className=" img " alt="..."width={120} height={93}/>
                      <div className="card-img-overlay">
-                        <h5 className="card-title" style={{width:'62px',
+                        <h5 className="card-title2" style={{width:'62px',
                      fontFamily:'Roboto',fontStyle:'normal',fontWeight:'600px',fontSize:'10px',lineHeight:'12px',textDecoration:'capitalize',color:'#ffffff'}}>Public Library</h5>
                      </div>
                   </div>
@@ -381,7 +381,7 @@ const OverView = () => {
                   <div className="card" style={{width:'100px',height:'93px',background: 'linear-gradient(360deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%)',borderRadius: '4px'}}>
                      <img src="R1.jpg" className=" img " alt="..."width={120} height={93}/>
                      <div className="card-img-overlay">
-                        <h5 className="card-title" style={{width:'62px',fontFamily:'Roboto',fontStyle:'normal',fontWeight:'600px',fontSize:'10px',lineHeight:'12px',textDecoration:'capitalize',color:'#ffffff'}}>Public Library</h5>
+                        <h5 className="card-title2" style={{width:'62px',fontFamily:'Roboto',fontStyle:'normal',fontWeight:'600px',fontSize:'10px',lineHeight:'12px',textDecoration:'capitalize',color:'#ffffff'}}>Public Library</h5>
                      </div>
                   </div>
                   </div>
@@ -389,7 +389,7 @@ const OverView = () => {
                   <div className="card" style={{width:'100px',height:'93px',background: 'linear-gradient(360deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%)',borderRadius: '4px'}}>
                      <img src="R1.jpg" className=" img " alt="..."width={120} height={93}/>
                      <div className="card-img-overlay">
-                        <h5 className="card-title" style={{width:'62px',
+                        <h5 className="card-title2" style={{width:'62px',
                      fontFamily:'Roboto',fontStyle:'normal',fontWeight:'600px',fontSize:'10px',lineHeight:'12px',textDecoration:'capitalize',color:'#ffffff'}}>Public Library</h5>
                      </div>
                   </div>
@@ -398,7 +398,7 @@ const OverView = () => {
                   <div className="card" style={{width:'100px',height:'93px',background: 'linear-gradient(360deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%)',borderRadius: '4px'}}>
                      <img src="R1.jpg" className=" img " alt="..."width={120} height={93}/>
                      <div className="card-img-overlay">
-                        <h5 className="card-title" style={{width:'62px',
+                        <h5 className="card-title2" style={{width:'62px',
                      fontFamily:'Roboto',fontStyle:'normal',fontWeight:'600px',fontSize:'10px',lineHeight:'12px',textDecoration:'capitalize',color:'#ffffff'}}>Public Library</h5>
                      </div>
                   </div>
@@ -407,7 +407,7 @@ const OverView = () => {
                   <div className="card" style={{width:'100px',height:'93px',background: 'linear-gradient(360deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%)',borderRadius: '4px'}}>
                      <img src="R1.jpg" className=" img" alt="..."width={120} height={93}/>
                      <div className="card-img-overlay">
-                        <h5 className="card-title" style={{width:'62px',fontFamily:'Roboto',fontStyle:'normal',fontWeight:'600px',fontSize:'10px',lineHeight:'12px',textDecoration:'capitalize',color:'#ffffff'}}>Public Library</h5>
+                        <h5 className="card-title2" style={{width:'62px',fontFamily:'Roboto',fontStyle:'normal',fontWeight:'600px',fontSize:'10px',lineHeight:'12px',textDecoration:'capitalize',color:'#ffffff'}}>Public Library</h5>
                      </div>
                   </div>
                   </div>

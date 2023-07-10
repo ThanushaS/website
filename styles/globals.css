@@ -10,9 +10,6 @@
     overflow-x: hidden;
     height: 100vh;
     background: url(bg4.png), lightgray 10% / cover no-repeat;
-   
-   
-   
  }
  
  .wrapper{
@@ -1286,4 +1283,306 @@ font-weight: 600;
 line-height: normal;
 text-transform: capitalize;
 color: rgba(255, 255, 255, 1);
+}
+.freefire{
+width: 61px !important;
+height: 22px !important;
+flex-shrink: 0;
+border-radius: 31px;
+background: rgba(33, 153, 193, 0.20);
+
+}
+.free{
+  margin-top: -10px;
+  color: #FFF;
+text-align: center;
+font-size: 8px;
+font-family: Roboto;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.indays{
+  width: 61px;
+height: 22px;
+flex-shrink: 0;
+border-radius: 32px;
+background: rgba(255, 255, 255, 0.12);
+box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.25);
+color: #FFF;
+font-size: 8px;
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+.days{
+  margin-top: -10px;
+  color: #FFF;
+font-size: 8px;
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+.card-title{
+color: #FFF !important;
+font-size: 14px !important;
+font-family: Roboto !important;
+font-style: normal !important;
+font-weight: 600 !important;
+line-height: normal !important;
+text-transform: capitalize !important;
+margin-top: -10px !important;
+}
+.Prize{
+  color: #2199C1;
+font-size: 10px;
+font-family: Roboto;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-transform: capitalize;
+}
+.joinbtn{
+  width: 82.863px;
+  height: 25.895px;
+  flex-shrink: 0;
+  border-radius: 32px;
+background: #2199C1;
+}
+.join{
+  color: #FFF;
+font-size: 9px;
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+text-transform: uppercase;
+margin-top: -5px;
+}
+.closebtn{
+  width: 82.863px;
+height: 25.895px;
+flex-shrink: 0;
+border-radius: 32px;
+background: #E54547;
+}
+.close{
+  color: #FFF;
+font-size: 9px;
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+text-transform: uppercase;
+margin-top: -7px;
+margin-left: -10px;
+}
+.conrow1{
+  color: rgba(255, 255, 255, 0.26);
+font-family: Roboto;
+font-size: 10px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-left: -10px;
+width: 183px;
+height: 30px !important;
+border-radius: 5px  !important;
+text-align: start;
+}
+.dropdown-toggle{
+width: 8px;
+height: 6px;
+flex-shrink: 0;
+fill: #808080;
+left: 3px;
+}
+.prizeactive{
+  color: #FFF;
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+color: rgba(66, 170, 133, 1);
+color: rgba(255, 255, 255, 1);
+}
+.joinactive{
+  color: #FFF;
+font-family: Roboto;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.Presented{
+  color: #FFF;
+text-align: center;
+font-family: Roboto;
+font-size: 13px;
+font-style: normal;
+font-weight: 600;
+line-height: 162.187%;
+}
+.esportspro{
+  width: 207px;
+height: 21px;
+flex-shrink: 0;
+color: #fff;
+}
+.stream span::before,
+.stream ::after{
+  content: '';
+  position: absolute;
+  width: 0.6em;
+  height: 0.6em;
+  border-radius: 50%;
+  transition: 0.5s cubic-bezier(0.5, -0.5, 0.25, 1.5);
+  top: calc(50% - 0.6em / 2);
+}
+
+span::before {left: 0; z-index: -1;}
+span::after {right: 0; z-index: -2;}
+
+span:hover {
+    color: rgba(255, 255, 255, 0.62);
+}
+
+span:hover::before {
+    
+    border-radius: 0px 20px 0px 0px;
+    background: #434654;
+    background-color: rgba(67, 70, 84, 1);
+    width: 100%;
+height: 41px;
+flex-shrink: 0;
+align-items: center;
+margin-top: -11px;
+
+}
+
+span:hover::before {
+    top: 0;
+}
+.stream{
+  color: rgba(255, 255, 255, 0.62);
+font-family: Roboto;
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+text-transform: uppercase;
+align-items: center;
+}
+.TournamentParticipants{
+  color: #FFF;
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+.actcard {
+  text-align: center;
+  box-shadow: rgba(17, 22, 33, 1);
+  margin-top: 58px;
+  width: 80px !important;
+  height: 108px;
+}
+.actcard img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+.actcard .acttitle {
+  color: #FFF;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+margin-bottom: 7px;  
+}
+.actp{
+  color: #FFF;
+font-family: Roboto;
+font-size: 10px;
+font-style: normal;
+font-weight: 400;
+line-height: 172.688%;
+text-transform: capitalize;
+}
+.TournamentDetails{
+  color: #FFF;
+font-family: Roboto;
+font-size: 10px;
+font-style: normal;
+font-weight: 400;
+line-height: 172.688%;
+text-transform: capitalize;
+}
+.Inkind{
+  color: #FFF;
+font-family: Roboto;
+font-size: 13px;
+font-style: normal;
+font-weight: 700;
+line-height: 172.688%;
+text-transform: capitalize;
+}
+.backlink{
+  color: #FFF;
+font-family: Roboto;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 138.2%;
+text-transform: capitalize;
+}
+.actdol{
+  color: #2199C1;
+font-family: Roboto;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: 138.2%;
+text-transform: capitalize;
+}
+.NumberofSponsor{
+  color: #FFF;
+font-family: Roboto;
+font-size: 10px;
+font-style: normal;
+font-weight: 400;
+line-height: 138.2%;
+text-transform: capitalize;
+}
+.gamingesports{
+  text-align: start;
+font-family: Roboto;
+font-size: 24px;
+font-style: normal;
+font-weight: 900;
+line-height: 67.687%;
+letter-spacing: -1.08px;
+text-transform: uppercase;
+color: #fff !important;
+}
+.tplabel{
+  width: 604px;
+height: 30px;
+flex-shrink: 0;
+background: rgba(255, 255, 255, 0.04);
+color: rgba(255, 255, 255, 0.29);
+font-family: Roboto;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 172.688%;
+text-transform: capitalize;
+margin-left: 16px;
+margin-top: 4px;
+text-align: start;
 }

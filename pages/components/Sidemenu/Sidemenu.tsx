@@ -4,7 +4,7 @@ import Logo from '../Logo';
 
 
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faBriefcase, faBullhorn, faCartShopping, faHome, faSitemap, faUsers, fas,faHexagonVerticalNftSlanted,faAlternateFirstOrder, faGear } from '@fortawesome/free-solid-svg-icons';
+import { faBriefcase, faBullhorn, faCartShopping, faHome, faSitemap, faUsers, fas,faHexagonVerticalNftSlanted,faGear } from '@fortawesome/free-solid-svg-icons';
 import { far } from '@fortawesome/free-regular-svg-icons';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -71,14 +71,14 @@ export const menuItems=[
    ],
   },
   {
-   name:"Teams",
-   url:'/Teams',
+   name:"Sports",
+   url:'/Sports',
    icon:faBriefcase,
 
-   subMenuBlank:"Teams",
+   subMenuBlank:"Sports",
  
    subMenus: [
-     { name: "Pro Teams", url: "/components/Sidemenu/dashboard/teams/ProTeams" },
+     { name: "Pro Sports", url: "/components/Sidemenu/dashboard/sports/esports" },
    ],
   },
   {

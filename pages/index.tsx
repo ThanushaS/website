@@ -4,6 +4,8 @@ import Header from './components/Header/Header'
 import Sidemenu from './components/Sidemenu/Sidemenu'
 import '/styles/Home.module.css'
 import OverView from './components/Sidemenu/dashboard/overview/OverView'
+import styles from '/styles/index.module.css'
+
 
 
 const inter = ({ subsets: ['latin'] })

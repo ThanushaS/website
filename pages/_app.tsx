@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import '/styles/globals.css'
 import '/styles/Home.module.css'
+import styles from "./index.module.css"
+
 import "bootstrap/dist/css/bootstrap.min.css";
 import Script from 'next/script';
 import { useEffect } from "react";

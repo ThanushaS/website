@@ -85,7 +85,7 @@ const [settingsMenuActive, setSettingsMenuActive] = useState(false);
             return(
             <li className='nav-item' key={navM.name} onClick={() => handlenavMenus(navM)}>
                 <a href={navM.url}>
-                  <span className='item'><i className={navM.icon}style={{color:'rgba(97, 103, 114, 1)',marginLeft:'-25px'}} />
+                  <span className='item'style={{marginLeft:'110px'}}><i className={navM.icon}style={{color:'rgba(97, 103, 114, 1)',marginLeft:'-55px'}} />
                     <span className="  top-0  start-100 translate-middle p-1 bg-danger   rounded-circle" />
                   </span>
                 </a>
